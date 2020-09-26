@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en" style="color: white; background-color: black;">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice</title>
+</head>
+<body style="background-image: url(images/pexels-barikive-5282392.jpg)">
+    <a href="aboutUs.html">About Us</a><br>
+    <a href="images/images.html">Images</a> 
+    <h1>Advanced text semantics</h1>
+    <p>Let's start with a quote:</p>
+    <blockquote>
+        By default, <abbr title="Hypertext Markup Language">HTML</abbr> is accessible, if used correctly.
+    <p>
+        <abbr title="Cascading Style Sheet">CSS</abbr> can also be used to make web pages more, or less, accessible.
+    </blockquote>
+    </p>
+    <p>
+        Chemical Formulae: <dl>
+            <dt>H<sub>2</sub>O</dt>
+            <dd>(Water)</dd> 
+            <dt>C<sub>2</sub>H<sub>6</sub>O,</dt>
+            <dd>(Ethanol)</dd>
+        </dl>
+    </p>
+    <p>
+        Dates: 
+        <dl>
+            <dt>December 25<sup>th</sup> 2019</dt>
+            <dd>(Christmas Day)</dd>
+            <dt>November 2<sup>nd</sup> 2019</dt>
+            <dd>(<span lang="sp">Día de los Muertos</span>)</dd>
+        </dl>
+    </p>
+
+    
+    <code>
+        <pre>
+    var para = document.querySelector('p'); 
+    para.onclick = function() { 
+        alert('Owww, stop poking me!'); 
+    }
+        </pre>
+    </code>
+    <p>
+        You shouldn't use presentational elements like <code>&lt;font&gt;</code> and <code>&lt;center&gt;</code>.<br>
+        In the above JavaScript example, <var>para</var> represents a paragraph element.<br>
+        Select all the text with <kbd>Ctrl</kbd>/<kbd>Cmd</kbd> + <kbd>A</kbd>.
+    </p>
+    <code>
+        <pre>
+    $ ping mozilla.org
+    PING mozilla.org (63.245.215.20): 56 data bytes 64 bytes from 63.245.215.20: icmp_seq=0 ttl=40 time=158.233 ms
+        </pre>
+    </code>
+
+    &Nscr;&yscr;&sscr;&ascr;<br>&Cscr;&lscr;&ascr;&rscr;&kscr;<br>&#128564;&#129393;&#129313;<br>&lpar;&equals;
+        
+
+    <!-- Form Practice -->
+        <form action="data.json" method="POST">
+            <fieldset>
+                <legend>Medical Questionare</legend>
+                <p>
+                    <label for="name:">Write your first and last name:</label>
+                    <input type="text" id="name" name="user.name">
+                </p>
+
+                <p>
+                    <label for="MedHist">Please fill in your medical history</label><br>
+                    <textarea name="user.hist" id="MedHist" cols="30" rows="10">Type here</textarea>
+                </p>
+                
+                <p>
+                    <button type="submit">Submit your Medical Questionare</button>
+                    <button disabled type="reset">Reset</button>
+                </p>
+
+                <p>
+                    <label for="images">Please upload a picture of your face</label>
+                    <input type="file" id="images" name="user.image" accept=".jpeg .jpg">
+                </p>
+                
+                <p>
+                    <label for="symptom_1">
+                        <input type="checkbox" name="symptom_1" id="symptom_1">
+                        Cough
+                    </label><br>
+                    <label for="symptom_2">
+                        <input type="checkbox" name="symptom_2" id="symptom_2">
+                        Fever
+                    </label><br>
+                    <label for="symptom_3">
+                        <input type="checkbox" name="symptom_3" id="symptom_3">
+                        Headache
+                    </label><br>
+                    <label for="symptom_4">
+                        <input type="checkbox" name="symptom_4" id="symptom_4">
+                        Dry Mouth
+                    </label><br>
+                </p>
+
+                <p>
+                    <label for="password">Enter your password:</label>
+                    <input type='password' id=password name="user.password">
+                </p>
+
+                <p>
+                    What is your age group: <br>
+                    <label for="age">
+                        <input type="radio" id="age" name="user.age">
+                        0-12
+                    </label><br>
+                    <label for="age">
+                        <input type="radio" id="age" name="user.age">
+                        13-20
+                    </label><br>
+                    <label for="age">
+                        <input type="radio" id="age" name="user.age">
+                        21+
+                    </label><br>
+                </p>
+            </fieldset>
+        </form>
+</body>
+</html>
